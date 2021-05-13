@@ -13,7 +13,7 @@ export default class App extends React.Component {
 
     this.state = {
         textButton: "Войти",
-        messageClickButton: "Как-то так!"
+        messageClickButton: "Как-то, так!"
     };
 }
 
