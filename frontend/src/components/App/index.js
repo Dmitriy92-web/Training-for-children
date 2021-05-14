@@ -1,19 +1,16 @@
 import React from 'react';
 import { Switch, Route, Redirect } from "react-router-dom";
-import AuthorizationButton from '../AuthorizationButton'
+import { Auth } from '../Auth'
 
 export const App = () => {
    return (
       <>
          <Switch>
-            <Route path="/login">
-               <AuthorizationButton
-                  textButton="Войти"
-                  messageClickButton="Как-то так!"
-               />
+            <Route path="/auth">
+               <Auth />
             </Route>
 
-            <Redirect to="/login" />
+            <Redirect to="/auth" />
          </Switch>
       </>
    )
